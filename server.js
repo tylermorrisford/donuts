@@ -23,8 +23,8 @@ app.set("view engine", "handlebars");
 
 // Import routes and give the server access to them.
 
-// var routes = require("./controllers/catsController.js");
-// app.use(routes);
+var routes = require("./controllers/donutController.js");
+app.use( "/", routes);
 
 var connection = require(__dirname + "/config/connection.js");
 

@@ -8,4 +8,4 @@ const orm = require("../config/orm");
 // clicking the button adds donut to devoured
 
 
-module.exports = burger;
+module.exports = donut;
