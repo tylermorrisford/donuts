@@ -7,7 +7,20 @@ var donut = {
         orm.selectAll('donuts', function(res){
             cb(res);
         })
+    },
+
+    insertOne: function(cb){
+        orm.insertOne('donuts', function(res){
+            cb(res);
+        })
+    },
+
+    updateOne: function(cb){
+        orm.updateOne('donuts', function(res){
+            cb(res);
+        })
     }
+
 }
 // form allows user to add a donut with button to devour
 // donut (not yet devoured) displays with id and button

@@ -1,0 +1,15 @@
+body, html {
+        height: 100%;
+        margin: 0;
+}
+
+body {
+    background-image: url("../img/donuts.jpeg");
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

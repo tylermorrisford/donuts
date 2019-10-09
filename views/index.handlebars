@@ -1,1 +1,32 @@
-<p>you're connected brah</p>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12" id="siteName">
+            <h1>Donut Contest</h1>
+        </div>
+        <div class="col-xs-6 task">
+            <div class="row">
+                {{#each donut_data}}
+                    {{#unless this.devoured}}
+                <div class="col-xs-9">
+                    <pre>{{this.id}}. {{this.donut_name}}</pre>
+                </div>    
+                <div class="col-xs-3">
+                    <form action="/donuts/update?_method=PUT" method="post" class="button-size">
+                        <input type="hidden" name="donut_id" type="text" value={{this.id}}>
+                        <br>
+                        <button type="submit" class="btn btn-default">EAT, COMPETITIVELY</button>
+                    </form>
+                </div>
+                {{/unless}}
+                {{/each}}
+            </div>
+        </div>
+        <div class"col-xs-6 task">
+            {{#each donut_data}}
+                {{#if this.devoured}}
+                <input class="form-control" type="text" placeholder="{{this.id}}. {{this.donut_name}}" readonly>
+                {{/if}}
+            {{/each}}   
+        </div>
+    </div>
+</div>
