@@ -13,10 +13,8 @@ var donut = {
         orm.update('donuts', id, cb)
     },
 
-    insertOne: function (cb) {
-        orm.insertOne('donuts', function (res) {
-            cb(res);
-        })
+    insert: function (name, cb) {
+        orm.insert('donuts', name, cb);
     }
 
 

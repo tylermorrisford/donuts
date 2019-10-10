@@ -18,5 +18,11 @@ router.put("/donuts/update", function(req, res){
     }
 })
 
+router.post("/burgers/create", function(req, res){
+    donut.insert(req.body.donut_name, function(result){
+        console.log(result);
+        res.redirect("/");
+    })
+})
 
 module.exports = router;
