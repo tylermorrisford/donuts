@@ -11,7 +11,7 @@
                     <pre>{{this.id}}. {{this.donut_name}}</pre>
                 </div>    
                 <div class="col-xs-3">
-                    <form action="/donuts/update?_method=PUT" method="post" class="button-size">
+                    <form method="POST" action="/donuts/update?_method=PUT" class="button-size">
                         <input type="hidden" name="donut_id" type="text" value={{this.id}}>
                         <br>
                         <button type="submit" class="btn btn-default">EAT, COMPETITIVELY</button>

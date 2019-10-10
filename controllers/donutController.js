@@ -12,7 +12,7 @@ router.get("/", function(req, res){
 })
 
 router.put("/donuts/update", function(req, res){
-    donut.updateOne(req.body.donut_id), function(result){
+    donut.update(req.body.donut_id), function(result){
         console.log(result);
         res.redirect("/");
     }

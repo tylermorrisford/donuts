@@ -1,23 +1,24 @@
 const express = require("express");
+var bodyParser = require("body-parser");
 const mysql = require("mysql");
+var methodOverride = require('method-override')
+var exphbs = require("express-handlebars");
 require('dotenv').config()
 
-// SETUP DOT ENV FILE BEFORE COMMITTING!
 
 var PORT = process.env.PORT || 8080;
 
 var app = express();
 
-// Serve static content for the app from the "public" directory in the application directory.
 app.use(express.static("public"));
 
 // Parse application body
-app.use(express.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({extended: false}));
+// app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-// Set Handlebars.
-var exphbs = require("express-handlebars");
-
+// method override allows form to make a put request
+app.use(methodOverride('_method'));
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
