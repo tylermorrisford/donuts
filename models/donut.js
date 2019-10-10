@@ -17,15 +17,6 @@ var donut = {
         orm.insert('donuts', name, cb);
     }
 
-
 }
-
-
-
-
-// form allows user to add a donut with button to devour
-// donut (not yet devoured) displays with id and button
-// clicking the button adds donut to devoured
-
 
 module.exports = donut;
