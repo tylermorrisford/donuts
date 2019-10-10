@@ -10,7 +10,7 @@ var donut = {
     },
 
     update: function (id, cb) {
-        orm.update('donuts', id, cb)
+        orm.update('donuts', id, cb);
     },
 
     insert: function (name, cb) {

@@ -11,6 +11,7 @@ var orm = {
     update: function(table, condition, cb){
         connection.query("UPDATE " + table + " SET devoured=true WHERE id=" + condition + ";", function(err, result){
             if (err) throw err;
+            console.log('this is the origin of the cb');
             cb(result);
         })
     },

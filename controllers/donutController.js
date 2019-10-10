@@ -14,11 +14,12 @@ router.get("/", function(req, res){
 router.put("/donuts/update", function(req, res){
     donut.update(req.body.donut_id), function(result){
         console.log(result);
+        console.log('controller logs result and then should redirect');
         res.redirect("/");
     }
 })
 
-router.post("/burgers/create", function(req, res){
+router.post("/donuts/create", function(req, res){
     donut.insert(req.body.donut_name, function(result){
         console.log(result);
         res.redirect("/");
