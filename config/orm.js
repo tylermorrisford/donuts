@@ -12,9 +12,8 @@ var orm = {
         connection.query("UPDATE " + table + " SET devoured=true WHERE id=" + condition + ";", function(err, result){
             if (err) throw err;
             console.log('this is the origin of the cb');
-            // cb(result);
-            return result;
-            console.log('if it runs you see mes');
+             cb(result);
+            console.log('if cb runs you see me');
         })
     },
     insert: function(table, newDonut, cb){
