@@ -14,7 +14,7 @@
         </div>
 
         <div class="col task">
-                    <h5>donuts we'll eat:</h5>
+                    <h4><u>donuts we'll eat:</u></h4>
             <div class="row">
                 {{#each donut_data}}
                     {{#unless this.devoured}}
@@ -23,7 +23,7 @@
                     <form method="POST" action="/donut/update?_method=PUT" class="button-size">
                         <input type="hidden" name="donut_id" type="text" value={{this.id}}>
                         <br>
-                        <button type="submit" class="btn btn-outline-secondary">EAT, COMPETITIVELY</button>
+                        <button type="submit" class="btn btn-outline-secondary">EAT THIS DONUT!</button>
                     </form><br>
                 </div>
                 {{/unless}}
@@ -32,7 +32,7 @@
         </div>
         <div class="spacer"></div>
         <div class"col-xs-6 eaten">
-            <h5>donuts we ate:</h5>
+            <h4><u>donuts we ate:</u></h4>
             {{#each donut_data}}
                 {{#if this.devoured}}
                 <input class="form-control" type="text" placeholder="{{this.id}}. {{this.donut_name}}" readonly>

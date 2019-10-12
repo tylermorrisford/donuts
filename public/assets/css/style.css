@@ -20,12 +20,16 @@ body {
     font-family: 'Mansalva', cursive;
 }
 
-h5 {
+h4 {
     font-family: 'Mansalva', cursive;
 }
 
 p {
     font-family: 'Roboto Condensed', sans-serif;
+}
+
+.ready {
+    margin-right: 10px;
 }
 
 .top {
