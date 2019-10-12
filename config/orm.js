@@ -13,7 +13,7 @@ var orm = {
             console.log(result);
             if (err) throw err;
             cb(result);
-            // console.log('if cb runs you see me');
+            console.log('if you console log in a forest, and the trees are errors, does it even log?');
         })
     },
     insert: function(table, val, cb){
