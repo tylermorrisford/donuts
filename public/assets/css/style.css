@@ -13,3 +13,16 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+h1 {
+    text-align: center;
+    font-family: 'Mansalva', cursive;
+}
+
+p {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.spacer {
+    height: 60px;
+}
