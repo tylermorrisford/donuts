@@ -1,8 +1,18 @@
-<div class="container">
+<div class="container top">
     <div class="row">
         <div class="col" id="siteName">
-            <h1>Donut Contest</h1>
+            <h1>Donut Contest!</h1>
+              <div class="row">
+    <div class="col-xs-12 text-center enter_section">
+      <p>Enter in the next donut you will enjoy!</p>
+      <form action="/donut/create" method="POST">
+        <input type="text" name="donut_name" class="form-control" value="" id="enter_text">
+        <button type="submit" class="btn btn-primary" id="text-enter-button">SUBMIT</button>
+      </form>
+    </div>
+  </div>
         </div>
+
         <div class="col task">
                     <h5>donuts we'll eat:</h5>
             <div class="row">
@@ -30,17 +40,4 @@
             {{/each}}   
         </div>
     </div>
-</div>
-<div class="spacer"></div>
-
-<div class="container">
-  <div class="row">
-    <div class="col-xs-12 text-center enter_section">
-      <p>Enter in the next donut you will enjoy!</p>
-      <form action="/donut/create" method="POST">
-        <input type="text" name="donut_name" class="form-control" value="" id="enter_text">
-        <button type="submit" class="btn btn-primary" id="text-enter-button">SUBMIT</button>
-      </form>
-    </div>
-  </div>
 </div>

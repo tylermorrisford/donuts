@@ -5,6 +5,7 @@ body, html {
 
 body {
     background-image: url("../img/donuts.jpeg");
+    image-rendering: optimizeSpeed;
     position: absolute;
     top: 0;
     left: 0;
@@ -19,8 +20,16 @@ body {
     font-family: 'Mansalva', cursive;
 }
 
+h5 {
+    font-family: 'Mansalva', cursive;
+}
+
 p {
     font-family: 'Roboto Condensed', sans-serif;
+}
+
+.top {
+    margin-top:25px;
 }
 
 .spacer {
