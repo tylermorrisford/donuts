@@ -2,7 +2,6 @@ const express = require("express");
 var bodyParser = require("body-parser");
 var methodOverride = require('method-override')
 var exphbs = require("express-handlebars");
-require('dotenv').config()
 
 
 var PORT = process.env.PORT || 8080;

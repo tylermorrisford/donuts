@@ -11,7 +11,7 @@ router.get("/", function(req, res){
     })
 })
 
-router.put("/donuts/update", function(req, res){
+router.put("/donut/update", function(req, res){
     donut.update(req.body.donut_id), function(result){
         console.log(result);
         // console.log('controller logs result and then should redirect');
@@ -19,7 +19,7 @@ router.put("/donuts/update", function(req, res){
     }
 })
 
-router.post("/donuts/create", function(req, res){
+router.post("/donut/create", function(req, res){
     donut.insert(req.body.donut_name, function(result){
         console.log(result);
         res.redirect("/");
