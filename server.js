@@ -16,7 +16,7 @@ app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
 
-var routes = require("./controllers/donutController");
+var routes = require("./controllers/donutController.js");
 app.use( "/", routes);
 
 app.listen(PORT, function() {
