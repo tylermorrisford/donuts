@@ -20,7 +20,9 @@
                     {{#unless this.devoured}}
                 <div class="col-s-3 ready">
                     <p>{{this.id}}. {{this.donut_name}}</p>
-                    <form method="POST" action="/donut/update?_method=PUT" class="button-size">
+                    {{!-- <form method="POST" action="/donut/update?_method=PUT" class="button-size"> --}}
+                    {{!-- method override is apparently deprecated --}}
+                    <form class="button-size">
                         <input type="hidden" name="donut_id" type="text" value={{this.id}}>
                         <br>
                         <button type="submit" class="btn btn-outline-secondary">EAT THIS DONUT!</button>

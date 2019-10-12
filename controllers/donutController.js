@@ -13,8 +13,9 @@ router.get("/", function(req, res){
 
 router.put("/donut/update", function(req, res){
     donut.update(req.body.donut_id), function(result){
+        // use post with ajax in it
+        console.log('donut id: ' + req.body.donut_id);
         console.log(result);
-        // console.log('controller logs result and then should redirect');
         res.redirect("/");
     }
 })

@@ -1,7 +1,5 @@
 var orm = require("../config/orm.js");
 
-// create the code that will call the ORM functions using donut specific input for the ORM
-
 var donut = {
     selectAll: function (cb) {
         orm.selectAll("donuts", function (res) {
@@ -10,6 +8,8 @@ var donut = {
     },
 
     update: function (id, cb) {
+        console.log(id);
+        console.log('this is undefined?' + cb);
         orm.update("donuts", id, cb);
     },
 
