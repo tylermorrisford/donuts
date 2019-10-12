@@ -14,7 +14,7 @@ router.get("/", function(req, res){
 router.put("/donuts/update", function(req, res){
     donut.update(req.body.donut_id), function(result){
         console.log(result);
-        console.log('controller logs result and then should redirect');
+        // console.log('controller logs result and then should redirect');
         res.redirect("/");
     }
 })
