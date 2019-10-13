@@ -3,4 +3,7 @@ INSERT INTO donuts (donut_name, devoured) VALUES
     ('jelly', false),
     ('boston creme', false),
     ('powdered', false),
-    ('vanilla frosted', false);
+    ('vanilla frosted', false),
+    ('rainbow sprinkles', false),
+    ('raspberry', false),
+    ('choncolate cake', false);

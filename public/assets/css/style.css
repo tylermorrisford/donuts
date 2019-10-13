@@ -31,13 +31,10 @@ p {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-.ready {
+.ready, .gonnaEat {
     margin-right: 15px;
 }
 
-.gonnaEat {
-    margin-right: 20px;
-}
 .eaten {
     margin: 0 auto 30px 25px;
 }

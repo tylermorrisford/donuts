@@ -2,29 +2,29 @@
     <div class="row">
         <div class="col" id="siteName">
             <h1>Donut Contest!</h1>
-              <div class="row">
-    <div class="col-xs-12 text-center enter_section">
-      <p>Enter in the next donut you will enjoy!</p>
-      <form action="/donut/create" method="POST">
-        <input type="text" name="donut_name" class="form-control" value="" id="enter_text">
-        <button type="submit" class="btn btn-primary" id="text-enter-button">SUBMIT</button>
-      </form>
-    </div>
-  </div>
+            <div class="row">
+                <div class="col-xs-12 text-center enter_section">
+                    <p>Enter in the next donut you will enjoy!</p>
+                    <form action="/donut/create" method="POST">
+                        <input type="text" name="donut_name" class="form-control" value="" id="enter_text">
+                        <button type="submit" class="btn btn-primary" id="text-enter-button">SUBMIT</button>
+                    </form>
+                </div>
+            </div>
         </div>
 
         <div class="col gonnaEat">
-                    <h4><u>donuts we'll eat:</u></h4>
+            <h4><u>donuts we'll eat:</u></h4>
             <div class="row">
                 {{#each donut_data}}
-                    {{#unless this.devoured}}
+                {{#unless this.devoured}}
                 <div class="col-s-3 ready" id="toBeEaten">
                     <p>{{this.id}}. {{this.donut_name}}</p>
                     <form method="POST" action="/donut/update?_method=PUT" class="button-size">
-                    {{!-- method override works :) --}}
+                        {{!-- method override works :) --}}
                         <input type="hidden" name="donut_id" type="text" value={{this.id}}>
-                        <br>
-                        <button id={{this.id}} type="submit" class="btn btn-outline-secondary eat-button">EAT THIS DONUT!</button>
+                        <button id={{this.id}} type="submit" class="btn btn-outline-secondary eat-button">EAT THIS
+                            DONUT!</button>
                     </form><br>
                 </div>
                 {{/unless}}
@@ -34,10 +34,10 @@
         <div class="col-xs-6 eaten">
             <h4><u>donuts we ate:</u></h4>
             {{#each donut_data}}
-                {{#if this.devoured}}
-                <input class="form-control" type="text" placeholder="{{this.id}}. {{this.donut_name}}" readonly>
-                {{/if}}
-            {{/each}}   
+            {{#if this.devoured}}
+            <input class="form-control" type="text" placeholder="{{this.id}}. {{this.donut_name}}" readonly>
+            {{/if}}
+            {{/each}}
         </div>
     </div>
 </div>
