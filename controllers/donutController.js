@@ -11,13 +11,13 @@ router.get("/", function(req, res){
     })
 })
 
-router.put("/donut/update", function(req, res){
-    donut.update(req.body.donut_id), function(result){
+router.put("/donut/update", function(req, res){ // use router.post  change html form to post method
+    donut.update(req.body.donut_id, function(result){
         // use post with ajax in it
-        console.log('donut id: ' + req.body.donut_id);
+        // console.log('donut id: ' + req.body.donut_id);
         console.log(result);
-        res.redirect("/");
-    }
+        res.redirect("/")
+    })
 })
 
 router.post("/donut/create", function(req, res){
