@@ -21,8 +21,7 @@
                 <div class="col-s-3 ready" id="toBeEaten">
                     <p>{{this.id}}. {{this.donut_name}}</p>
                     <form method="POST" action="/donut/update?_method=PUT" class="button-size">
-                    {{!-- method override is apparently deprecated --}}
-                    {{!-- <form method="" action="" class="button-size"> --}}
+                    {{!-- method override works :) --}}
                         <input type="hidden" name="donut_id" type="text" value={{this.id}}>
                         <br>
                         <button id={{this.id}} type="submit" class="btn btn-outline-secondary eat-button">EAT THIS DONUT!</button>

@@ -8,8 +8,6 @@ var donut = {
     },
 
     update: function (id, cb) {
-        console.log(id);
-        console.log(cb);
         orm.update("donuts", id, cb);
     },
 

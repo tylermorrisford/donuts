@@ -10,10 +10,8 @@ var orm = {
 
     update: function(table, condition, cb){
         connection.query("UPDATE " +table+" SET devoured=true WHERE id="+condition+";", function(err,result){    
-            // console.log(result);
             if (err) throw err;
             cb(result);
-            console.log('if you console log in a forest, and the trees are errors, does it even log?');
         })
     },
     insert: function(table, val, cb){
