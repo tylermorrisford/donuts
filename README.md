@@ -1,6 +1,10 @@
 # donuts!
 a handlebars app using node, express, and mysql - with a handmade ORM
 
+[Demo the app on heroku>](https://intense-lowlands-26182.herokuapp.com)
+
+![image](https://user-images.githubusercontent.com/49931992/72041267-50189f80-3268-11ea-8617-c892b49b645e.png)
+
 ## Index
 1. How it works
 2. Instructions
@@ -18,7 +22,6 @@ npm install
 ``` 
 to install the packages and dependencies(in this case: mysql, handlebars, express, body-parser and method-override). Then use the schema.sql and seeds.sql files to create your mysql database, and edit the connection.js file with your local database credentials.  
 
-OR! [Demo the app on heroku>](https://intense-lowlands-26182.herokuapp.com)
 
 ## Built with
 * [Node](https://nodejs.org/en/) - Asynchronous, single-threaded js runtime environment
